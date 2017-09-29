@@ -1,0 +1,75 @@
+html,body{
+    margin: 0 auto;
+
+}
+.admin-main{
+    width: 100%;
+    height: auto;
+}
+#main{
+    width: 1100px;
+    height: 400px;
+    margin: 0 auto;
+}
+.title1{
+    display: block;
+    width: 500px;
+    height: 30px;
+    font-weight: 200;
+    font-size: 15px;
+}
+.layui-btn-group{
+    float: right;
+}
+#mainForm{
+    width: 1100px;
+    height: 400px;
+    margin-top: 40px;
+
+}
+#NewSale{
+    margin-top: 40px;
+    width: 1100px;
+    height: 400px;
+    background: #FFFFFF;
+}
+#rowOne{
+    height: 40px;
+}
+.layui-input{
+    width: 200px;
+    float: left;
+}
+.tab{
+    display: block;
+    width: 20px;
+    height: 10px;
+    float: left;
+    color: red;
+}
+.tab2{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    float: right;
+    color: red;
+    margin-top: 10px;
+    margin-right: 80px;
+}
+#selectMan{
+    width: 200px;
+    height: 35px;
+}
+.layui-textarea{
+    width: 550px;
+}
+tr{
+    border-bottom: solid 1px #C0C2CC;
+    background: #F8F8F8;
+}
+.td1{
+    height: 40px;
+}
+.td2{
+    color: gray;
+}

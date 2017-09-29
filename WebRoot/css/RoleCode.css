@@ -1,0 +1,38 @@
+html,body{
+    margin: 0 auto;
+
+}
+.admin-main{
+    width: 100%;
+    height: auto;
+}
+#main{
+    width: 1100px;
+    height: 400px;
+    margin: 0 auto;
+    /*background: greenyellow;*/
+}
+.title1{
+    display: block;
+    width: 500px;
+    height: 30px;
+    font-weight: 200;
+    font-size: 15px;
+}
+.layui-btn-group{
+    float: right;
+}
+
+input{
+    width: 200px;
+    height: 40px;
+}
+.span1{
+    padding-left: 40px;
+}
+#table1{
+    margin-top: 41px;
+}
+tr{
+    background: #F8F8F8;
+}

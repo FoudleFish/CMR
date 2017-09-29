@@ -1,0 +1,58 @@
+html,body{
+    margin: 0 auto;
+
+}
+.admin-main{
+    width: 100%;
+    height: auto;
+}
+#main{
+    width: 1100px;
+    height: 400px;
+    margin: 0 auto;
+}
+.title1{
+    display: block;
+    width: 500px;
+    height: 30px;
+    font-weight: 200;
+    font-size: 15px;
+}
+.layui-btn-group{
+    float: right;
+}
+#mainForm{
+    width: 1100px;
+    height: 400px;
+    margin-top: 40px;
+
+}
+#NewSale{
+    margin-top: 40px;
+    width: 1100px;
+    height: 400px;
+    background: #FFFFFF;
+}
+.layui-input{
+    width: 200px;
+    float: left;
+}
+.tab{
+    display: block;
+    width: 20px;
+    height: 10px;
+    float: right;
+    color: red;
+}
+tr{
+    background: #F8F8F8;
+}
+#tr1{
+    height: 80px;
+
+}
+#spanCon{
+    font-size: 7px;
+    width: 300px;
+    height: 30px;
+}
