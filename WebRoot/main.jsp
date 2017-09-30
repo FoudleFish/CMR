@@ -21,7 +21,7 @@
         </div>
         <div class="logo_right">
             <ul class="logo_right_con">
-                <li><a href="salesManagement/ManageSaleOpportunity.jsp">销售机会管理 > > </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">新建销售机会--></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">编辑销售机会--></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">指派销售机会</a></li>
+                <li><a href="salesManagement/ManageSaleOpportunity.jsp">销售机会管理 > > </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="salesManagement/NewSaleOpportunity.jsp">新建销售机会--></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="salesManagement/CompileSaleOpportunity.jsp">编辑销售机会--></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="salesManagement/AssignSaleOpportunity.jsp">指派销售机会</a></li>
                 <li><a href="#">客户开发计划 > > </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">制定计划--></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">执行计划</a></li>
             </ul>
         </div>
@@ -83,6 +83,31 @@
                 <li><a href="#">用户管理 > > </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">新建用户</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">编辑用户信息</a></li>
                 <li><a href="#">角色管理 > > </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">新建角色</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">编辑角色信息</a></li>
                 <li><a href="#">权限分配 > > </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">为角色赋权限</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">为用户赋角色</a></li>
+            </ul>
+        </div>
+    </fieldset>
+    <fieldset class="layui-elem-field layui-elem-field-width">
+        <legend>新闻管理</legend>
+        <div class="logo">
+            <div id="logo_content6"></div>
+        </div>
+        <div class="logo_right">
+            <ul class="logo_right_con">
+                <li><a href="#">轮播管理 > > </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">新建用户</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">编辑用户信息</a></li>
+                <li><a href="#">新闻管理 > > </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">新建角色</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">编辑角色信息</a></li>
+            </ul>
+        </div>
+    </fieldset>
+    <fieldset class="layui-elem-field layui-elem-field-width">
+        <legend>系统管理</legend>
+        <div class="logo">
+            <div id="logo_content6"></div>
+        </div>
+        <div class="logo_right">
+            <ul class="logo_right_con">
+                <li><a href="#">自定义设置 > > </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">新建用户</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">编辑用户信息</a></li>
+                <li><a href="#">数据库管理 > > </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">新建角色</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">编辑角色信息</a></li>
+                <li><a href="#">数据库连接设置 > > </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">为角色赋权限</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">为用户赋角色</a></li>
             </ul>
         </div>
     </fieldset>

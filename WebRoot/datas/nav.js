@@ -55,6 +55,27 @@ var navs = [{
 		"href": "serviceManagement/serviceFiling.jsp"
 	}]
 }, {
+	"title": "报价管理",
+	"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe60a;",
+	"spread": false,
+	"children": [{
+		"title": "报价创建",
+		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe642;",
+		"href": "serviceManagement/newService.jsp"
+	}, {
+		"title": "报价处理",
+		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe642;",
+		"href": "serviceManagement/serviceAllocation.jsp"
+	}, {
+		"title": "报价审核",
+		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe642;",
+		"href": "serviceManagement/serviceProcessing.jsp"
+	}, {
+		"title": "报价归档",
+		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe642;",
+		"href": "serviceManagement/serviceFiling.jsp"
+	}]
+}, {
 	"title": "统计报表",
 	"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe629;",
 	"spread": false,
@@ -108,5 +129,35 @@ var navs = [{
 		"title": "权限分配",
 		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe600;",
 		"href": "RoleCode.jsp"
+	}]
+},{
+	"title": "新闻管理",
+	"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe620;",
+	"spread": false,
+	"children": [{
+		"title": "轮播管理",
+		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe62e;",
+		"href": "#"
+	}, {
+		"title": "新闻管理",
+		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe600;",
+		"href": "#"
+	}]
+},{
+	"title": "系统管理",
+	"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe620;",
+	"spread": false,
+	"children": [{
+		"title": "自定义设置",
+		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe62e;",
+		"href": "#"
+	}, {
+		"title": "数据库管理",
+		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe600;",
+		"href": "#"
+	}, {
+		"title": "数据库连接设置 ",
+		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe600;",
+		"href": "#"
 	}]
 }];

@@ -82,6 +82,23 @@
                         </dd>
                     </dl>
                 </li>
+                 <li class="layui-nav-item">
+                    <a href="javascript:;">报价管理</a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i>报价创建</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i>报价处理</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i>报价审核</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i>报价归档</a>
+                        </dd>
+                    </dl>
+                </li>
                 <li class="layui-nav-item">
                     <a href="javascript:;">统计报表</a>
                     <dl class="layui-nav-child">
@@ -99,35 +116,6 @@
                         </dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;">基础数据</a>
-                    <dl class="layui-nav-child">
-                        <dd>
-                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i>数据字典管理</a>
-                        </dd>
-                        <dd>
-                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i>查询产品信息</a>
-                        </dd>
-                        <dd>
-                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i>查询库存</a>
-                        </dd>
-                    </dl>
-                </li>
-                <li class="layui-nav-item" >
-                    <a href="javascript:;">权限管理</a>
-                    <dl class="layui-nav-child">
-                        <dd>
-                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i>用户管理</a>
-                        </dd>
-                        <dd>
-                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i>角色管理</a>
-                        </dd>
-                        <dd>
-                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i>权限分配</a>
-                        </dd>
-                    </dl>
-                </li>
-                <li class="layui-nav-item" ></li>
                 <li class="layui-nav-item" ></li>
                 <li class="layui-nav-item" ></li>
                 <li class="layui-nav-item" ></li>
