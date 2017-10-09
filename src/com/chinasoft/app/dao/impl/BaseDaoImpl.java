@@ -14,15 +14,31 @@ import java.util.List;
 
 
 
+
+
+
+
+
 import org.hibernate.Query;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import com.chinasoft.app.dao.BaseDao;
+import com.chinasoft.app.domain.User;
 import com.chinasoft.app.util.HibernateUtil;
 
-public class BaseDaoImpl<T> implements BaseDao<T> {
+public class BaseDaoImpl<T> extends HibernateDaoSupport implements BaseDao<T> {
 	private Class<T> clazz;//泛型参数对应实际的class
+	
+	
+	public void setClazz(Class<T> clazz) {
+		this.clazz = clazz;
+	}
+
+	
+
 	public BaseDaoImpl(){
 		//获取当前类的泛型父类
 		Type type = this.getClass().getGenericSuperclass();
@@ -100,24 +116,7 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 		return this.delete(t);
 	}
 
-	@Override
-	public T get(Serializable id) {
-		Session session=null;
-		//Transaction tran = null;
-		try {
-			session=HibernateUtil.openSession();
-			//tran=session.beginTransaction();
-			T t = (T)session.get(this.clazz, id);
-			return t;
-			
-		} catch (Exception e) {
-			//tran.rollback();
-			return null;
-		}finally{
-			//关闭session
-			session.close();
-		}
-	}
+	
 
 	@Override
 	public List<T> findAll() {
@@ -131,9 +130,6 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 		} catch (Exception e) {
 			//tran.rollback();
 			return null;
-		}finally{
-			//关闭session
-			session.close();
 		}
 	}
 
@@ -197,6 +193,25 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 			//关闭session
 			session.close();
 		}
+	}
+
+
+
+	@SuppressWarnings("deprecation")
+	@Override
+	public T get(Serializable username) {
+		// TODO Auto-generated method stub
+		return  this.getHibernateTemplate().get(this.clazz, username);
+	}
+
+
+
+	@Override
+	public List<T> findByNameQuery(String queryName, String username,
+			String password) {
+		// TODO Auto-generated method stub
+		return (List<T>) this.getHibernateTemplate().findByNamedQuery(queryName,username,password);
+		
 	}
 
 }

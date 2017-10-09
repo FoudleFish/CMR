@@ -74,4 +74,7 @@
             <one-to-many class="com.chinasoft.app.domain.Jurisdiction" />
         </set>
     </class>
+    <query name="findbyname">
+			from User where username=? and password=?
+		</query>
 </hibernate-mapping>
