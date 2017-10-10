@@ -23,7 +23,7 @@
 		  <a href="">客户信息 ></a>
 		</span>
     </div>
-        <form>
+       
             <%--//选择按钮--%>
                 <div class="layui-btn-group globalHight">
                     <button class="layui-btn">帮助</button>
@@ -31,10 +31,10 @@
                     <button class="layui-btn"><a href="recordAssociation.jsp">交往记录</a></button>
                     <button class="layui-btn"><a href="historicalOrder.jsp">历史订单</a></button>
                     <button class="layui-btn"><a href="custManage.jsp">返回</a></button>
-                    <button class="layui-btn">保存</button>
+                    
                 </div>
             <%--表格--%>
-
+			<form action="" method="post">
                 <div>
                     <%--表一+++++++++++++--%>
                     <table class="layui-table">
@@ -47,30 +47,30 @@
                         <tr>
                             <th>客户编号</th>
                             <th>
-                                <label>KHO71202001</label>
+                                <label>${requestScope.customer.cid}</label>
                             </th>
                             <th>名称</th>
                             <th>
-                                <input type="text"  value="北京聪海信息科技有限公司">
+                                <input type="text"  value="${requestScope.customer.cname}" name="cname">
                                 <span>*</span>
                             </th>
                         </tr>
                         <tr>
                             <td>地区</td>
                             <td>
-                                <select>
-                                    <option value="">北京</option>
-                                    <option value="">天津</option>
+                                <select name="address">
+                                    <option value="北京">北京</option>
+                                    <option value="天津">天津</option>
                                 </select>
                                 <span>*</span>
                             </td>
                             <td>客户经理</td>
                             <td>
                                 <div>
-                                    <select name="interest">
-                                        <option value="">   </option>
-                                        <option value="0">写作</option>
-                                        <option value="1" selected="">小明</option>
+                                    <select name="manager">
+                                       
+                                        <option value="写作">写作</option>
+                                        <option value="小明" selected="">小明</option>
                                     </select>
                                     <span>*</span>
                                 </div>
@@ -79,8 +79,8 @@
                         <tr>
                             <td>客户等级</td>
                             <td colspan="3">
-                                <select>
-                                    <option value="" selected="">战略合作伙伴</option>
+                                <select name="lv">
+                                    <option value="战略合作伙伴" selected="">战略合作伙伴</option>
                                 </select>
                                 <span>*</span>
                             </td>
@@ -88,23 +88,23 @@
                         <tr>
                             <td>客户满意度</td>
                             <td>
-                                <select>
-                                    <option value="">☆</option>
-                                    <option value="">☆☆</option>
-                                    <option value="" selected="">☆☆☆</option>
-                                    <option value="">☆☆☆☆</option>
-                                    <option value="">☆☆☆☆☆</option>
+                                <select name="satisfaction">
+                                    <option value="☆">☆</option>
+                                    <option value="☆☆">☆☆</option>
+                                    <option value="☆☆☆" selected="">☆☆☆</option>
+                                    <option value="☆☆☆☆">☆☆☆☆</option>
+                                    <option value="☆☆☆☆☆">☆☆☆☆☆</option>
                                 </select>
                                 <span>*</span>
                             </td>
                             <td>客户信用度</td>
                             <td>
-                                <select>
-                                    <option value="">☆</option>
-                                    <option value="">☆☆</option>
-                                    <option value="" selected="">☆☆☆</option>
-                                    <option value="">☆☆☆☆</option>
-                                    <option value="">☆☆☆☆☆</option>
+                                <select name="credit">
+                                    <option value="☆">☆</option>
+                                    <option value="☆☆">☆☆</option>
+                                    <option value="☆☆☆" selected="">☆☆☆</option>
+                                    <option value="☆☆☆☆">☆☆☆☆</option>
+                                    <option value="☆☆☆☆☆">☆☆☆☆☆</option>
                                 </select>
                                 <span>*</span>
                             </td>
@@ -121,31 +121,31 @@
                         <tr>
                         <td>地址</td>
                         <td>
-                            <input type="text" value="北京市海淀区成府路702号">
+                            <input type="text" value="${requestScope.customer.address}" name="address">
                             <span>*</span>
                         </td>
                         <td>邮政编码</td>
                         <td>
-                            <input type="text" value="100027">
+                            <input type="text" value="${requestScope.customer.post}" name="post">
                             <span>*</span>
                         </td>
                     </tr>
                         <tr>
                             <td>电话</td>
                             <td>
-                                <input type="text" value="010-62283393">
+                                <input type="text" value="${requestScope.customer.phone} name="phone">
                                 <span>*</span>
                             </td>
                             <td>传真</td>
                             <td>
-                                <input type="text" value="010-62283396">
+                                <input type="text" value="${requestScope.customer.fax}" name="fax">
                                 <span>*</span>
                             </td>
                         </tr>
                         <tr>
                             <td>网址</td>
                             <td>
-                                <input type="text" value="www.conghai.com">
+                                <input type="text" value="${requestScope.customer.https}" name="https">
                                 <span>*</span>
                             </td>
                             <td></td>
@@ -164,49 +164,56 @@
                         <tr>
                             <td>营业执照注册号</td>
                             <td>
-                                <input type="text">
+                                <input type="${requestScope.customer.marketing}" name="marketing">
                             </td>
                             <td>法人</td>
                             <td>
-                                <input type="text" value="聪颖">
+                                <input type="text" value="${requestScope.customer.legal}" name="legal">
                                 <span>*</span>
                             </td>
                         </tr>
                         <tr>
                             <td>注册资金（万元）</td>
                             <td>
-                                <input type="text">
+                                <input type="text" name="capital">
                             </td>
                             <td>年营业额</td>
                             <td>
-                                <input type="text">
+                                <input type="text" name="Marketingvolume">
                             </td>
                         </tr>
                         <tr>
                             <td>开户银行</td>
                             <td>
-                                <input type="text" value="北京银行 中关村支行">
+                                <input type="text" value="${requestScope.customer.bank}" name="bank">
                                 <span>*</span>
                             </td>
                             <td>银行账号</td>
                             <td>
-                                <input type="text" value="62258827238382838">
+                                <input type="text" value="${requestScope.customer.bankid}" name="bankid">
                                 <span>*</span>
                             </td>
                         </tr>
                         <tr>
                             <td>地税登记号</td>
                             <td>
-                                <input type="text">
+                                <input type="text" name="localtax">
                             </td>
                             <td>国税登记号</td>
                             <td>
-                                <input type="text">
+                                <input type="text" name="">
                             </td>
                         </tr>
+                        <tr>
+                        <td>
+                        <input type="submit" value="保存">
+                        </td>
+                        
+                        </tr>
                     </table>
+                    </form>
                 </div>
-        </form>
+        
 </div>
 </body>
 </html>

@@ -34,6 +34,7 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 	}
 	
 	public String login(){
+		System.out.println(user.getUsername());
 		List<User> list=userService.findByNameQuery("findbyname", user.getUsername(), user.getPassword());
 		System.out.println(list.size());
 		if(list.size()==1){

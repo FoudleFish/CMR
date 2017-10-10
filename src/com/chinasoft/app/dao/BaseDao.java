@@ -15,5 +15,5 @@ public interface BaseDao<T> {
 	List<T> findAll(String condition,Object... params);
 	List<T> findAll(int currentPage,int pageSize);
 	int findTotalCount();
-	public List<T> findByNameQuery(String queryName,String username,String password);
+	public List<T> findByNameQuery(String queryName,Serializable username,Serializable password);
 }

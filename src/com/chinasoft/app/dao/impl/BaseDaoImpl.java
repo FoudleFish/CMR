@@ -207,8 +207,8 @@ public class BaseDaoImpl<T> extends HibernateDaoSupport implements BaseDao<T> {
 
 
 	@Override
-	public List<T> findByNameQuery(String queryName, String username,
-			String password) {
+	public List<T> findByNameQuery(String queryName, Serializable username,
+			Serializable password) {
 		// TODO Auto-generated method stub
 		return (List<T>) this.getHibernateTemplate().findByNamedQuery(queryName,username,password);
 		

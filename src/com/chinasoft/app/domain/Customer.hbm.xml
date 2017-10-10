@@ -100,4 +100,7 @@
             <one-to-many class="com.chinasoft.app.domain.Service" />
         </set>
     </class>
+    <query name="wocao">
+			from Customer where cid=? and cname=?
+		</query>
 </hibernate-mapping>

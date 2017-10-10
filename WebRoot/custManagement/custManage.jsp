@@ -24,21 +24,27 @@
     <div class="layui-btn-group globalHight">
         <button class="layui-btn">帮助</button>
         <button class="layui-btn"><a href="">查询</a></button>
+        
     </div>
 
     <div>
+    <form action="userA!findcustomer" method="post">
         <table class="layui-table">
             <tr>
                 <td>客户编号</td>
                 <td>
-                    <input type="text">
+                    <input type="text" name="cid">
                 </td>
                 <td>客户名称</td>
                 <td>
-                    <input type="text">
+                    <input type="text" name="cname">
+                </td>
+                <td>
+                    <input type="submit" value="cha">
                 </td>
             </tr>
         </table>
+        </form>
         <br/>
         <table class="layui-table">
             <tr>
@@ -49,12 +55,12 @@
             <td>操作</td>
         </tr>
             <tr>
-                <td>KHO71202001</td>
-                <td>北京聪海信息科技有限公司</td>
-                <td>小明</td>
-                <td>战略合作伙伴</td>
+                <td>${requestScope.customer.cid}</td>
+                <td>${requestScope.customer.cname}</td>
+                <td>${requestScope.customer.manager}</td>
+                <td>${requestScope.customer.lv}</td>
                 <td>
-                   <a href="custInformation.jsp"> <i class="layui-icon">&#xe642;</i></a>
+                   <a href="userA!findbyid?cid=${requestScope.customer.cid}"> <i class="layui-icon">&#xe642;</i></a>
                     &nbsp;&nbsp;&nbsp;&nbsp; <i class="layui-icon">&#xe640;</i>
                 </td>
             </tr>
