@@ -34,7 +34,7 @@
                     
                 </div>
             <%--表格--%>
-			<form action="" method="post">
+			<form action="userA!updata" method="post">
                 <div>
                     <%--表一+++++++++++++--%>
                     <table class="layui-table">
@@ -47,7 +47,7 @@
                         <tr>
                             <th>客户编号</th>
                             <th>
-                                <label>${requestScope.customer.cid}</label>
+                                <label><input type="text"  value="${requestScope.customer.cid}" name="cid"></label>
                             </th>
                             <th>名称</th>
                             <th>
@@ -133,7 +133,7 @@
                         <tr>
                             <td>电话</td>
                             <td>
-                                <input type="text" value="${requestScope.customer.phone} name="phone">
+                                <input type="text" value="${requestScope.customer.phone}" name="phone">
                                 <span>*</span>
                             </td>
                             <td>传真</td>
@@ -201,7 +201,7 @@
                             </td>
                             <td>国税登记号</td>
                             <td>
-                                <input type="text" name="">
+                                <input type="text" name="guotx">
                             </td>
                         </tr>
                         <tr>
@@ -211,8 +211,9 @@
                         
                         </tr>
                     </table>
-                    </form>
+                    
                 </div>
+                </form>
         
 </div>
 </body>

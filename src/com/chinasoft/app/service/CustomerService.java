@@ -8,5 +8,6 @@ import com.chinasoft.app.domain.Customer;
 public interface CustomerService {
 	public List<Customer> findByNameQuery(String queryName,int id,String name);
 	Customer findby(int id);
+	boolean updata(Customer customer);
 
 }

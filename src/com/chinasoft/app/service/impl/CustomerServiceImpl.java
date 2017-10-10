@@ -27,6 +27,13 @@ public class CustomerServiceImpl implements CustomerService{
 		return customerDao.get(id);
 	}
 
+	@Override
+	public boolean updata(Customer customer) {
+		// TODO Auto-generated method stub
+		customerDao.updata1(customer);
+		return true;
+	}
+
 	
 
 }

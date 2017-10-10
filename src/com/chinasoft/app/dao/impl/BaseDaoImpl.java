@@ -19,6 +19,7 @@ import java.util.List;
 
 
 
+
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -212,6 +213,16 @@ public class BaseDaoImpl<T> extends HibernateDaoSupport implements BaseDao<T> {
 		// TODO Auto-generated method stub
 		return (List<T>) this.getHibernateTemplate().findByNamedQuery(queryName,username,password);
 		
+	}
+
+
+
+	@SuppressWarnings("deprecation")
+	@Override
+	public boolean updata1(T t) {
+		// TODO Auto-generated method stub
+		 this.getHibernateTemplate().update(t);
+		 return true;
 	}
 
 }

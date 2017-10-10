@@ -3,9 +3,10 @@
 	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 	<struts>
+	
 	<include file="struts_customer.xml"></include>
-	<include file="struts_user.xml">
-	</include>
+	<include file="struts_user.xml"></include>
+	
 	
 	
 	</struts>

@@ -6,6 +6,7 @@ import java.util.List;
 import com.chinasoft.app.domain.User;
 
 public interface BaseDao<T> {
+	boolean updata1(T t);
 	boolean save(T t);
 	boolean update(T t);
 	boolean delete(T t);

@@ -40,6 +40,7 @@ public class CustomerAction extends ActionSupport implements ModelDriven<Custome
 	}
 	public String updata(){
 		
+		customerService.updata(customer);
 		return "fail";
 	}
 
