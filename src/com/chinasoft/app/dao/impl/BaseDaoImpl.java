@@ -14,14 +14,16 @@ import java.util.List;
 
 
 
+
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import com.chinasoft.app.dao.BaseDao;
 import com.chinasoft.app.util.HibernateUtil;
 
-public class BaseDaoImpl<T> implements BaseDao<T> {
+public class BaseDaoImpl<T> extends HibernateDaoSupport implements BaseDao<T> {
 	private Class<T> clazz;//泛型参数对应实际的class
 	public BaseDaoImpl(){
 		//获取当前类的泛型父类
