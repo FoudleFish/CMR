@@ -14,14 +14,16 @@ import java.util.List;
 
 
 
+
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 
 import com.chinasoft.app.dao.BaseDao;
 import com.chinasoft.app.util.HibernateUtil;
 
-public class BaseDaoImpl<T> implements BaseDao<T> {
+public class BaseDaoImpl<T> extends HibernateDaoSupport implements BaseDao<T> {
 	private Class<T> clazz;//泛型参数对应实际的class
 	public BaseDaoImpl(){
 		//获取当前类的泛型父类
@@ -100,7 +102,7 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 		return this.delete(t);
 	}
 
-	@Override
+	/*@Override
 	public T get(Serializable id) {
 		Session session=null;
 		//Transaction tran = null;
@@ -117,7 +119,7 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 			//关闭session
 			session.close();
 		}
-	}
+	}*/
 
 	@Override
 	public List<T> findAll() {
@@ -197,6 +199,12 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 			//关闭session
 			session.close();
 		}
+	}
+
+	@Override
+	public T get(Serializable id) {
+		// TODO Auto-generated method stub
+		return this.getHibernateTemplate().get(this.clazz, id);
 	}
 
 }

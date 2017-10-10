@@ -99,20 +99,7 @@
                         </dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;">基础数据</a>
-                    <dl class="layui-nav-child">
-                        <dd>
-                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i>数据字典管理</a>
-                        </dd>
-                        <dd>
-                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i>查询产品信息</a>
-                        </dd>
-                        <dd>
-                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i>查询库存</a>
-                        </dd>
-                    </dl>
-                </li>
+                
                 <li class="layui-nav-item" >
                     <a href="javascript:;">权限管理</a>
                     <dl class="layui-nav-child">
@@ -185,7 +172,7 @@
         <div class="layui-footer footer footer-demo" id="admin-footer">
         <div class="layui-main">
             <p>2017 &copy;
-                <a href="">鱼跃小组</a>
+                <a href="">摸鱼王小组</a>
             </p>
         </div>
     </div>

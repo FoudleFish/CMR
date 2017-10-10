@@ -54,7 +54,28 @@ var navs = [{
 		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe642;",
 		"href": "serviceManagement/serviceFiling.jsp"
 	}]
-}, {
+},{
+	"title": "报价管理",
+	"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe60a;",
+	"spread": false,
+	"children": [{
+		"title": "报价创建",
+		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe642;",
+		"href": "serviceManagement/order1.jsp"
+	}, {
+		"title": "报价处理",
+		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe642;",
+		"href": "serviceManagement/serviceProcessing.jsp"
+	}, {
+		"title": "报价审核",
+		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe642;",
+		"href": "serviceManagement/serviceFeedback.jsp"
+	}, {
+		"title": "报价归档",
+		"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe642;",
+		"href": "serviceManagement/serviceFiling.jsp"
+	}]
+},{
 	"title": "统计报表",
 	"icon": "&nbsp;&nbsp;&nbsp;&nbsp;&#xe629;",
 	"spread": false,

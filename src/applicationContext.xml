@@ -86,5 +86,5 @@
 	</bean>
 	<!-- 注解方式开启事务 -->
 	<tx:annotation-driven transaction-manager="transactionManager"/>
-	
+	<import resource="applicationContext_order.xml"/>
 </beans>
