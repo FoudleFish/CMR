@@ -35,4 +35,7 @@
             <column name="remarks" />
         </property>
     </class>
+    <query name="hello">
+			from Contact where cid=?
+		</query>
 </hibernate-mapping>

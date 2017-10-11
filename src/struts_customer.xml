@@ -9,6 +9,7 @@
 		<result>custInformation.jsp</result>
 			<result name="www">custManage.jsp</result>
 			<result name="fail">login.jsp</result>
+			<result name="wwww">linkman.jsp</result>
 		</action>
 		</package>
 		

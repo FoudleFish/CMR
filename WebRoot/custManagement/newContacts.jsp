@@ -31,6 +31,7 @@
     </div>
 
     <div style="width: 95%">
+    <form action="userA!updata1" method="post">
         <table class="layui-table">
             <colgroup>
                 <col width="250" style="background-color: #1E9FFF">
@@ -41,7 +42,7 @@
             <tr>
                 <td>姓名</td>
                 <td>
-                    <input type="text">
+                    <input type="text" name="cpname">
                 </td>
                 <td>性别</td>
                 <td>
@@ -52,24 +53,34 @@
             <tr>
                 <td>单位</td>
                 <td>
-                    <input type="text">
+                    <input type="text" name="cname">
                 </td>
                 <td>办公电话</td>
                 <td>
-                    <input type="text">
+                    <input type="text" name="tel">
                 </td>
             </tr>
             <tr>
                 <td>手机</td>
                 <td>
-                    <input type="text">
+                    <input type="text" name="phone">
                 </td>
                 <td>备注</td>
                 <td>
-                    <input type="text">
+                    <input type="text" name="remark">
                 </td>
             </tr>
+            <tr>
+            <td>职位</td>
+                <td>
+                    <input type="text" name="positionString">
+                </td>
+            <td>
+            <input type="submit" value="保存">
+            <td>
+            </tr>
         </table>
+        </form>
     </div>
 
 </div>

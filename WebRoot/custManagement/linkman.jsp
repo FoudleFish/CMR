@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>联系人</title>
@@ -33,11 +34,11 @@
             <tr>
                 <td>客户编号</td>
                 <td>
-                    <label>11111111</label>
+                    <label>${requestScope.customer.cid }</label>
                 </td>
                 <td>客户名称</td>
                 <td>
-                    <label>聪海信息科技有限公司</label>
+                    <label>${requestScope.customer.cname}</label>
                 </td>
             </tr>
         </table>
@@ -54,43 +55,24 @@
                     <td>操作</td>
                 </tr>
             </thead>
+            
             <tbody>
+            <c:forEach items="${requestScope.contact }" var="contact">
             <tr>
-                <td>沈聪林</td>
-                <td>男</td>
-                <td>总经理</td>
-                <td>010-683484438</td>
-                <td>13622883228</td>
+                <td>${contact.cname }</td>
+                <td>${contact.sex }</td>
+                <td>${contact.position }</td> 
+                <td>${contact.tel }</td>
+                <td>${contact.phone}</td>
                 <td></td>
                 <td>
                     <a href="editContacts.jsp"><i class="layui-icon">&#xe642;</i></a>
                     &nbsp;&nbsp;&nbsp;&nbsp;<i class="layui-icon">&#xe640;</i>
                 </td>
             </tr>
-            <tr>
-                <td>杨影</td>
-                <td>女</td>
-                <td>总经理助理</td>
-                <td>010-683484438</td>
-                <td>13722883228</td>
-                <td></td>
-                <td>
-                    <a href="editContacts.jsp"><i class="layui-icon">&#xe642;</i></a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="layui-icon">&#xe640;</i>
-                </td>
-            </tr>
-            <tr>
-                <td>詹兆辉</td>
-                <td>男</td>
-                <td>供销部经理</td>
-                <td>010-683484438</td>
-                <td>13622883228</td>
-                <td></td>
-                <td>
-                    <a href="editContacts.jsp"><i class="layui-icon">&#xe642;</i></a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="layui-icon">&#xe640;</i>
-                </td>
-            </tr>
+            </c:forEach>
+            
+            
             </tbody>
         </table>
     </div>

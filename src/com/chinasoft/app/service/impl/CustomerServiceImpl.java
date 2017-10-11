@@ -1,10 +1,12 @@
 package com.chinasoft.app.service.impl;
 
+import java.io.Serializable;
 import java.util.List;
 
 import org.springframework.transaction.annotation.Transactional;
 
 import com.chinasoft.app.dao.CustomerDao;
+import com.chinasoft.app.domain.Contact;
 import com.chinasoft.app.domain.Customer;
 import com.chinasoft.app.service.CustomerService;
 @Transactional
@@ -32,6 +34,18 @@ public class CustomerServiceImpl implements CustomerService{
 		// TODO Auto-generated method stub
 		customerDao.updata1(customer);
 		return true;
+	}
+
+	@Override
+	public List<Contact> findByNameQuery(String queryName, Serializable username) {
+		// TODO Auto-generated method stub
+		return customerDao.findByNameQuery(queryName, username);
+	}
+
+	@Override
+	public boolean insert(Contact contact) {
+		// TODO Auto-generated method stub
+		return customerDao.insert(contact);
 	}
 
 	

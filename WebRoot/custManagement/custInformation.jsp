@@ -27,7 +27,7 @@
             <%--//选择按钮--%>
                 <div class="layui-btn-group globalHight">
                     <button class="layui-btn">帮助</button>
-                    <button class="layui-btn"><a href="linkman.jsp"> 联系人</a></button>
+                    <button class="layui-btn"><a href="userA!insert"> 联系人</a></button>
                     <button class="layui-btn"><a href="recordAssociation.jsp">交往记录</a></button>
                     <button class="layui-btn"><a href="historicalOrder.jsp">历史订单</a></button>
                     <button class="layui-btn"><a href="custManage.jsp">返回</a></button>
